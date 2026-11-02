@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Bintang - Management Artis & Talent Indonesia</title>
+    <meta name="description" content="Agensi Resmi Pemanggilan Artis Ibukota, Penyanyi Dangdut, Pop, Band, MC TV, Artis Religi, dan Komedian. Kerjasama EO & Corporate Booking.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cinzel"', 'serif'],
+                    },
+                    colors: {
+                        gold: {
+                            100: '#fdf6e2',
+                            200: '#faeab7',
+                            300: '#f5dc85',
+                            400: '#eec951',
+                            500: '#dfb126',
+                            600: '#b88a17',
+                            700: '#8e6513',
+                        },
+                        dark: {
+                            900: '#0b0c10',
+                            800: '#14161f',
+                            700: '#1c1f2e',
+                            600: '#262a3e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF6D6 0%, #DFB126 50%, #9A7410 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #dfb126, #f5dc85, #8e6513) 1;
+        }
+        .glass-card {
+            background: rgba(20, 22, 31, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(223, 177, 38, 0.2);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(223, 177, 38, 0.55);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(223, 177, 38, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-gray-200 font-sans antialiased selection:bg-gold-500 selection:text-dark-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-dark-800 via-gold-600 to-dark-800 text-dark-900 text-xs font-semibold py-2 px-4 text-center border-b border-gold-500/30">
+        <span class="inline-flex items-center gap-2 text-white">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Layanan Resmi Manajemen Artis & Talent Indonesia • Konsultasi Booking Hubungi WhatsApp: 
+            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%20Management%2C%20saya%20ingin%20konsultasi%20booking%20artis" class="underline font-bold text-gold-200 hover:text-white transition">0882-1241-4791 (Mama / Bunda Mega)</a>
+        </span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 glass-card border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-400 to-gold-700 flex items-center justify-center shadow-lg shadow-gold-500/20 text-dark-900 font-serif font-black text-xl">
+                    MB
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-xl tracking-wider text-white flex items-center gap-1.5">
+                        MEGA BINTANG
+                        <span class="text-xs bg-gold-500/20 text-gold-400 px-2 py-0.5 rounded border border-gold-500/30 uppercase tracking-widest font-sans font-semibold">Agency</span>
+                    </span>
+                    <p class="text-[10px] text-gray-400 tracking-wider uppercase font-medium">Management Artis & Event Partner</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#beranda" class="text-gold-400 transition">Beranda</a>
+                <a href="#kategori" class="text-gray-300 hover:text-gold-400 transition">Kategori Artis</a>
+                <a href="#roster" class="text-gray-300 hover:text-gold-400 transition">Roster Bintang</a>
+                <a href="#keunggulan" class="text-gray-300 hover:text-gold-400 transition">Kenapa Kami</a>
+                <a href="#booking" class="text-gray-300 hover:text-gold-400 transition">Cara Booking</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%20Management%2C%20saya%20mau%20tanya%20jadwal%20dan%20pricelist%20artis" 
+                   class="inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-dark-900 font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm tracking-wide shadow-lg shadow-gold-500/25 transition duration-300">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+                    </svg>
+                    Hubungi WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-16 pb-24 overflow-hidden border-b border-dark-700">
+        <!-- Glow accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold-600/10 blur-[130px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-xs font-semibold uppercase tracking-widest mb-6">
+                    ⭐ Jalur Satu Pintu • Resmi & Berpengalaman
+                </div>
+                <h1 class="font-serif font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
+                    Hadirkan Bintang Spektakuler di <span class="gold-gradient-text">Event Terbaik Anda</span>
+                </h1>
+                <p class="mt-6 text-base sm:text-lg text-gray-300 font-normal leading-relaxed">
+                    Mega Bintang Management adalah agensi resmi pemanggilan artis, penyanyi dangdut, pop, band panggung, presenter TV, hingga komedian untuk Konser Akbar, Gathering Perusahaan, Kampanye, hingga Resepsi Pernikahan.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#roster" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 font-bold rounded-full text-sm shadow-xl shadow-gold-500/20 hover:scale-105 transition duration-300">
+                        Cek Daftar Artis & Bintang
+                    </a>
+                    <a href="#booking" class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 font-semibold text-sm transition duration-300">
+                        Formulir Request Jadwal
+                    </a>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="glass-card p-4 rounded-2xl text-center">
+                        <div class="text-2xl sm:text-3xl font-black font-serif text-gold-400">50+</div>
+                        <div class="text-xs text-gray-400 mt-1 font-medium">Artis & Talent Aktif</div>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl text-center">
+                        <div class="text-2xl sm:text-3xl font-black font-serif text-gold-400">300+</div>
+                        <div class="text-xs text-gray-400 mt-1 font-medium">Event Terselenggara</div>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl text-center">
+                        <div class="text-2xl sm:text-3xl font-black font-serif text-gold-400">100%</div>
+                        <div class="text-xs text-gray-400 mt-1 font-medium">Legalitas & SPK Jelas</div>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl text-center">
+                        <div class="text-2xl sm:text-3xl font-black font-serif text-gold-400">1 Pintu</div>
+                        <div class="text-xs text-gray-400 mt-1 font-medium">Direct Manajemen Resmi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kategori Section -->
+    <section id="kategori" class="py-16 bg-dark-800/60 border-b border-dark-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Pilihan Kategori</h2>
+                <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white">Layanan Artis Berdasarkan Kebutuhan Acara</h3>
+                <p class="text-sm text-gray-400 mt-3">Tersedia beragam talenta profesional siap memeriahkan panggung Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Dangdut -->
+                <div class="glass-card glass-card-hover p-5 rounded-2xl text-center cursor-pointer transition" onclick="filterCategory('dangdut')">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-3">🎤</div>
+                    <h4 class="font-bold text-sm text-white">Artis Dangdut</h4>
+                    <p class="text-xs text-gray-400 mt-1">Klasik, Koplo & Bintang TV</p>
+                </div>
+                <!-- Pop & Band -->
+                <div class="glass-card glass-card-hover p-5 rounded-2xl text-center cursor-pointer transition" onclick="filterCategory('pop')">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-3">🎸</div>
+                    <h4 class="font-bold text-sm text-white">Pop & Band</h4>
+                    <p class="text-xs text-gray-400 mt-1">Pop Lawas, Mandarin & Top 40</p>
+                </div>
+                <!-- MC & Host -->
+                <div class="glass-card glass-card-hover p-5 rounded-2xl text-center cursor-pointer transition" onclick="filterCategory('mc')">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-3">🎙️</div>
+                    <h4 class="font-bold text-sm text-white">MC & Host TV</h4>
+                    <p class="text-xs text-gray-400 mt-1">Corporate & Wedding Host</p>
+                </div>
+                <!-- Religi & Gambus -->
+                <div class="glass-card glass-card-hover p-5 rounded-2xl text-center cursor-pointer transition" onclick="filterCategory('religi')">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-3">🕌</div>
+                    <h4 class="font-bold text-sm text-white">Artis Religi</h4>
+                    <p class="text-xs text-gray-400 mt-1">Gambus, Nasyid & Ramadhan</p>
+                </div>
+                <!-- Komedian -->
+                <div class="glass-card glass-card-hover p-5 rounded-2xl text-center cursor-pointer transition" onclick="filterCategory('komedi')">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center text-2xl mb-3">🎭</div>
+                    <h4 class="font-bold text-sm text-white">Komedian</h4>
+                    <p class="text-xs text-gray-400 mt-1">Stand Up & Srimulat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roster Bintang Section -->
+    <section id="roster" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Roster Bintang</h2>
+                    <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white">Koleksi Artis & Talent Unggulan</h3>
+                </div>
+
+                <!-- Filter Pills -->
+                <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                    <button onclick="filterCategory('all')" id="btn-all" class="px-4 py-2 rounded-full bg-gold-500 text-dark-900 transition font-bold">Semua</button>
+                    <button onclick="filterCategory('dangdut')" id="btn-dangdut" class="px-4 py-2 rounded-full bg-dark-700 text-gray-300 hover:text-white transition">Dangdut</button>
+                    <button onclick="filterCategory('pop')" id="btn-pop" class="px-4 py-2 rounded-full bg-dark-700 text-gray-300 hover:text-white transition">Pop & Band</button>
+                    <button onclick="filterCategory('mc')" id="btn-mc" class="px-4 py-2 rounded-full bg-dark-700 text-gray-300 hover:text-white transition">MC & Host</button>
+                    <button onclick="filterCategory('religi')" id="btn-religi" class="px-4 py-2 rounded-full bg-dark-700 text-gray-300 hover:text-white transition">Religi</button>
+                    <button onclick="filterCategory('komedi')" id="btn-komedi" class="px-4 py-2 rounded-full bg-dark-700 text-gray-300 hover:text-white transition">Komedian</button>
+                </div>
+            </div>
+
+            <!-- Artist Cards Grid -->
+            <div id="roster-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Artist 1: Fahmi Shahab -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="dangdut">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-amber-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🎤</div>
+                        <span class="absolute top-3 right-3 bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Dangdut Klasik
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Fahmi Shahab</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Legenda "Kopi Dangdut" Indonesia</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Penyanyi legendaris dengan hits hits panggung yang membakar semangat penonton konser, gathering, dan festival musik.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20tertarik%20booking%20Fahmi%20Shahab%20(Kopi%20Dangdut)%20untuk%20event%20kami" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 2: Rani Pop Lawas & Mandarin -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="pop">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-blue-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🎵</div>
+                        <span class="absolute top-3 right-3 bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Pop & Mandarin
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Rani & Pop Lawas</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Penyanyi Tembang Kenangan & Mandarin</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Suara emas untuk acara pesta pernikahan elegan, gathering reuni akbar, dan malam keakraban tembang nostalgia.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20tertarik%20booking%20Penyanyi%20Pop%20Lawas%20Rani%20untuk%20event%20kami" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 3: Bintang Pantura & KDI Stars -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="dangdut">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-amber-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">💃</div>
+                        <span class="absolute top-3 right-3 bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Dangdut Koplo
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Bintang Pantura All Stars</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Dangdut Koplo Modern & Energik</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Performa panggung spektakuler dengan aransemen kendang rampak terkini yang mengajak semua hadirin bergoyang.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20mau%20booking%20Artis%20Dangdut%20Koplo%20All%20Stars" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 4: MC Artis TV & Presenter -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="mc">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-purple-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🎙️</div>
+                        <span class="absolute top-3 right-3 bg-purple-500/20 text-purple-300 border border-purple-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Master of Ceremony
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">MC Artis TV & Host</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Presenter Televisi & Formal Gathering</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Membawakan susunan acara dengan wibawa, komunikatif, humor elegan, dan menghidupkan suasana dari awal hingga penutupan.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20ingin%20booking%20MC%20Artis%20Presenter%20TV" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 5: Band Pop Rock & Top 40 -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="pop">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-blue-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🎸</div>
+                        <span class="absolute top-3 right-3 bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Pop Rock & Band
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">The Pop Tribute Band</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Hits Pop Indonesia 2000-an & Top 40</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Menyajikan lagu-lagu hits Cokelat, Sheila on 7, Dewa 19 hingga hits internasional untuk konser kampus dan festival.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20mau%20booking%20Band%20Pop%20Rock%20Festival" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 6: Grup Musik Religi & Gambus -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="religi">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-emerald-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🕌</div>
+                        <span class="absolute top-3 right-3 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Musik Religi
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Grup Gambus & Religi Nusantara</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Spesial Acara Islami & Bulan Ramadhan</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Alunan gambus modern, qasidah, dan nasyid merdu (gaya Debu & Sabyan) untuk pengajian akbar, halal bihalal, dan resepsi syar'i.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20ingin%20booking%20Grup%20Musik%20Religi%20/%20Gambus" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 7: Komedian Stand Up & Srimulat -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="komedi">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-rose-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🎭</div>
+                        <span class="absolute top-3 right-3 bg-rose-500/20 text-rose-300 border border-rose-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Komedian
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Komedian Panggung & Stand Up</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Pencair Suasana & Gelak Tawa Event</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Menghadirkan komedi cerdas, spontan, dan ramah keluarga untuk memecah kebekuan acara formal perusahaan.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20mau%20booking%20Komedian%20Stand%20Up%20untuk%20acara%20kami" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 8: Acoustic Chamber & Wedding Singer -->
+                <div class="artist-card glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col" data-category="pop">
+                    <div class="relative h-60 bg-gradient-to-t from-dark-900 via-dark-800 to-indigo-900/40 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl select-none">🎻</div>
+                        <span class="absolute top-3 right-3 bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                            Akustik & Wedding
+                        </span>
+                        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Siap Booking
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Harmoni Acoustic Chamber</h4>
+                            <p class="text-xs text-gold-400 font-semibold mt-0.5">Penyanyi Pernikahan & Intimate Dinner</p>
+                            <p class="text-xs text-gray-400 mt-2.5 line-clamp-2">Sentuhan romantis biola, cello, piano, dan vokal merdu untuk perayaan pernikahan sakral dan jamuan makan malam eksklusif.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dark-600 flex items-center gap-2">
+                            <a href="https://wa.me/6288212414791?text=Halo%20Mega%20Bintang%2C%20saya%20mau%20booking%20Acoustic%20Wedding%20Singer" 
+                               class="flex-1 py-2 text-center rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold text-xs transition">
+                                Booking Artis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section (Sistem Satu Pintu) -->
+    <section id="keunggulan" class="py-20 bg-dark-800/80 border-y border-dark-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Kenapa Memilih Kami</h2>
+                <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white">Keamanan & Kepastian Sistem Booking Satu Pintu</h3>
+                <p class="text-sm text-gray-400 mt-3">Kami memastikan setiap proses negosiasi, kontrak, dan teknis riders artis berjalan profesional tanpa biaya tersembunyi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Point 1 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl font-bold mb-4">1</div>
+                    <h4 class="font-bold text-base text-white">Jalur Langsung (Satu Pintu)</h4>
+                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Komunikasi langsung ke manajemen artis resmi. Tanpa perantara berlapis yang menaikkan harga di luar standar kewajaran.</p>
+                </div>
+                <!-- Point 2 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl font-bold mb-4">2</div>
+                    <h4 class="font-bold text-base text-white">Surat Perjanjian Kerja (SPK)</h4>
+                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Setiap deal dilindungi kontrak kerja bermaterai yang mengikat kedua belah pihak demi kepastian jadwal hari-H.</p>
+                </div>
+                <!-- Point 3 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl font-bold mb-4">3</div>
+                    <h4 class="font-bold text-base text-white">Pendampingan Riders Lengkap</h4>
+                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Tim kami membantu EO dan panitia memetakan technical rider (sound, lighting, mic) serta hospitality rider tanpa ribet.</p>
+                </div>
+                <!-- Point 4 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl font-bold mb-4">4</div>
+                    <h4 class="font-bold text-base text-white">Negosiasi Fleksibel Sesuai Anggaran</h4>
+                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Kami siap mencocokkan paket bintang dengan plafon anggaran yang dimiliki oleh instansi atau panitia acara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gold-500/30 relative">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-xs font-bold text-gold-400 uppercase tracking-widest bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/30">Formulir Booking</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mt-3">Konsultasi Jadwal & Pricelist Artis</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Isi form di bawah ini untuk terhubung langsung ke WhatsApp Mama & Tim Manajemen Mega Bintang.</p>
+                </div>
+
+                <form id="booking-form" class="space-y-5" onsubmit="handleBookingSubmit(event)">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5">Nama Pemesan / Instansi</label>
+                            <input type="text" id="form-name" required placeholder="Contoh: PT Sumber Makmur / Panitia Reuni" class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5">Nomor WhatsApp Anda</label>
+                            <input type="tel" id="form-phone" required placeholder="Contoh: 081234567890" class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5">Pilihan Kategori / Nama Artis</label>
+                            <select id="form-artist" class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                                <option value="Fahmi Shahab (Kopi Dangdut)">Fahmi Shahab (Dangdut)</option>
+                                <option value="Bintang Pantura All Stars">Bintang Pantura All Stars</option>
+                                <option value="Rani & Pop Lawas Nostalgia">Rani & Pop Lawas Nostalgia</option>
+                                <option value="The Pop Tribute Band">The Pop Tribute Band</option>
+                                <option value="MC Artis TV & Presenter">MC Artis TV & Presenter</option>
+                                <option value="Grup Musik Religi & Gambus">Grup Musik Religi & Gambus</option>
+                                <option value="Komedian Stand Up Comedy">Komedian Stand Up Comedy</option>
+                                <option value="Harmoni Acoustic Chamber">Harmoni Acoustic Chamber</option>
+                                <option value="Konsultasi Artis Lainnya">Artis Lainnya (Request Khusus)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5">Jenis Acara</label>
+                            <select id="form-event" class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                                <option value="Corporate Gathering / Hut Kantor">Corporate Gathering / HUT Kantor</option>
+                                <option value="Konser Musik / Festival Publik">Konser Musik / Festival Publik</option>
+                                <option value="Resepsi Pernikahan (Wedding)">Resepsi Pernikahan (Wedding)</option>
+                                <option value="Pengajian Akbar / Halal Bihalal">Pengajian Akbar / Halal Bihalal</option>
+                                <option value="Kampanye / Roadshow">Kampanye / Roadshow</option>
+                                <option value="Private Party / Ulang Tahun">Private Party / Ulang Tahun</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5">Estimasi Tanggal Acara</label>
+                            <input type="date" id="form-date" class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5">Lokasi / Kota Pelaksanaan</label>
+                            <input type="text" id="form-location" placeholder="Contoh: Jakarta / Bandung / Surabaya" class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1.5">Catatan Tambahan / Permintaan Khusus</label>
+                        <textarea id="form-notes" rows="3" placeholder="Tuliskan jika ada permintaan khusus lagu, durasi tampil, atau penyesuaian anggaran..." class="w-full bg-dark-800 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-dark-900 font-extrabold rounded-xl text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/25 transition duration-300 flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+                            </svg>
+                            Kirim Permintaan Langsung ke WhatsApp Mama
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-dark-700 py-12 text-center text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="w-10 h-10 mx-auto rounded-full bg-gradient-to-br from-gold-400 to-gold-700 flex items-center justify-center shadow-lg text-dark-900 font-serif font-black text-lg mb-3">
+                MB
+            </div>
+            <h4 class="font-serif font-bold text-base text-white tracking-wider">MEGA BINTANG ARTIST MANAGEMENT</h4>
+            <p class="text-xs text-gold-400 mt-1">Dikelola Langsung Oleh: Bunda Mega, Mama, & Saiful</p>
+            <p class="text-xs text-gray-400 mt-3 max-w-md mx-auto">
+                Melayani booking dan manajemen jadwal artis resmi di seluruh Indonesia untuk konser musik, gathering, dan pesta pribadi.
+            </p>
+            <div class="mt-6 pt-6 border-t border-dark-800 text-[11px] text-gray-500">
+                © 2026 Mega Bintang Management. Dikembangkan khusus oleh Afridho Ikhsan (Edo).
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        function filterCategory(cat) {
+            const cards = document.querySelectorAll('.artist-card');
+            cards.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-category') === cat) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update active pill button
+            const buttons = ['all', 'dangdut', 'pop', 'mc', 'religi', 'komedi'];
+            buttons.forEach(b => {
+                const btn = document.getElementById('btn-' + b);
+                if (btn) {
+                    if (b === cat) {
+                        btn.className = "px-4 py-2 rounded-full bg-gold-500 text-dark-900 transition font-bold";
+                    } else {
+                        btn.className = "px-4 py-2 rounded-full bg-dark-700 text-gray-300 hover:text-white transition";
+                    }
+                }
+            });
+        }
+
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const artist = document.getElementById('form-artist').value;
+            const eventType = document.getElementById('form-event').value;
+            const date = document.getElementById('form-date').value || 'Belum ditentukan';
+            const location = document.getElementById('form-location').value || 'Jakarta';
+            const notes = document.getElementById('form-notes').value || '-';
+
+            const message = `Halo Mama / Tim Mega Bintang Management,%0A%0ASaya ingin konsultasi booking artis:%0A- Nama: ${encodeURIComponent(name)}%0A- No WA: ${encodeURIComponent(phone)}%0A- Artis: ${encodeURIComponent(artist)}%0A- Jenis Acara: ${encodeURIComponent(eventType)}%0A- Tanggal: ${encodeURIComponent(date)}%0A- Lokasi: ${encodeURIComponent(location)}%0A- Catatan: ${encodeURIComponent(notes)}%0A%0AMohon info ketersediaan jadwal dan pricelist resminya ya. Terima kasih!`;
+
+            window.open(`https://wa.me/6288212414791?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
